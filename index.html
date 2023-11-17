@@ -94,7 +94,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width= , initial-scale=1.0">
   <title>Document</title>
-  <link rel="styleshet" href="style.css">
+ <style>
+  .grid{
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    grid-template-columns: 20% auto 20%;
+    height: 100vh;
+}
+@media (max-width:480px){
+    .grid{
+        grid-template-rows: 80px 80px auto 80px 80px;
+        grid-template-columns: 1fr;
+    }
+    aside,main{
+        grid-column: 1/4;
+    }
+}
+
+header,footer{
+    background:#C08BFD;
+    grid-column: 1/4;
+
+}
+aside{
+    background: #F6C356;
+}
+main{
+    background: #B2EE94;
+}
+ </style>
 </head>
 <body>
   <div class="grid">
