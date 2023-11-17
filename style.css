@@ -1,0 +1,6 @@
+.grid{
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    grid-template-columns: 20% auto 20%;
+    height: 100vh;
+}
